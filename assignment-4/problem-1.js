@@ -6,11 +6,8 @@ function calculateMoney(ticketSale) {
     const stuffLunchPerPerson=50;
     const totalStuff=8;
     const lunchCost=stuffLunchPerPerson*totalStuff;
-    
     const totalCostPerDay=securityGuardSalary+lunchCost;
-    
     const ticketSaleIncome=ticketSale*perTicketPrice;
-    
     const totalIncome=ticketSaleIncome-totalCostPerDay;
     return totalIncome;
     }
@@ -43,17 +40,18 @@ function deleteInvalids(array) {
     return arrResult;
     }
     
+
     function password(obj) {
         const name=obj.name;
         const siteName=obj.siteName;
         const birthYear=obj.birthYear;
-        const str=birthYear.toString();
+        const str=birthYear.toString();//Converting the year from number to string for operation.
         if(typeof name==='undefined'|| typeof siteName==='undefined'|| typeof birthYear==='undefined')
         return "Invalid";
-        else if(str.length<4)
+        else if(str.length<4) //checking whether the digits in birth year is less than 4.
         return "Invalid";
-        const firstLetter=siteName.charAt(0).toUpperCase();
-        const newSiteName=firstLetter+siteName.slice(1);
+        const firstLetter=siteName.charAt(0).toUpperCase();//convert the first letter in upper case.
+        const newSiteName=firstLetter+siteName.slice(1);// join the capital letter with the rest of the string.
         const pass=newSiteName+"#"+name+"@"+birthYear;
         return pass;    
     }
@@ -81,4 +79,4 @@ function deleteInvalids(array) {
             return savings;
             }
 
-    
+    console.log(monthlySavings(100, [ 900 , 2700 , 3400] ));

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>This is first list</h1>
+    <ul class="li-container">
+        <li class="li-item">Item-1</li>
+        <li class="li-item">Item-2</li>
+        <li class="li-item">Item-3</li>
+        <li class="li-item">Item-3</li>
+    </ul>
+    <div id="container">golam mustafa</div>
+    <script>
+        document.getElementById('container').innerHTML='';
+        // let count=1;
+        const liItem=document.querySelectorAll('.li-item');
+        // console.log(liItem);
+        for(items of liItem){
+            console.log(items.innerText);
+            // count++;
+        }
+          
+    </script>
+</body>
+</html>

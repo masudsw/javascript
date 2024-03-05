@@ -1,3 +1,9 @@
-var num1='19.98';
-var num2=parseFloat(num1);
-console.log(num2);
+
+// const product={name: 'Laptop', model:'Yoga 3', price:49000, dusk: '512SSD'}
+
+// const {price} = product;
+// console.log(price);
+function work(x, y = 4) {
+    return x + y;
+   }
+   console.log(work(32);

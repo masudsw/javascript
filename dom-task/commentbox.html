@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="my-body">
+    <h1>Add you comment</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, aliquid. Delectus non, tenetur, excepturi rerum labore officiis numquam, iusto necessitatibus aliquam corporis laboriosam repudiandae doloribus voluptatum possimus molestias aut a.</p>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nulla sit voluptatum architecto ea quas. Sunt ut inventore consectetur velit iste, officia fugit saepe labore aliquam. Nisi commodi sint quae necessitatibus dolores nulla possimus dolor iure ratione assumenda esse quidem incidunt in quasi deleniti, voluptas fuga provident explicabo. Architecto in deserunt omnis consectetur illum enim reprehenderit inventore ipsa. Culpa modi adipisci facilis fugiat assumenda, illo deleniti quasi? Amet, eos voluptas officiis adipisci mollitia iure alias nobis optio. Ipsum, quos officiis distinctio earum quas accusamus odio corrupti illum eaque facilis tempore dignissimos id veritatis perspiciatis quia ex. Impedit, cupiditate nisi blanditiis accusantium qui vitae expedita architecto amet! Impedit numquam, inventore quis corrupti dolorum iste culpa accusantium nemo? Corrupti optio cum eius, molestias mollitia non repellendus nisi est fugit accusamus quo, voluptate neque ex recusandae temporibus totam quasi vitae assumenda nihil commodi officiis amet! Facilis id aliquam ex ad odio, tenetur deleniti recusandae quibusdam? Nulla quidem minima aspernatur corrupti laboriosam atque dolore culpa saepe vero incidunt praesentium voluptates porro rem deleniti, amet alias eveniet expedita accusantium est officiis voluptas! Totam nostrum sunt animi, minus perspiciatis temporibus mollitia quis incidunt eaque, quidem perferendis sed maiores placeat qui commodi soluta at eos consectetur fugiat quo, earum ratione! Tenetur earum error deserunt, est, maxime id, laboriosam itaque fugit sint possimus provident eligendi numquam minima temporibus. Praesentium quae quos, quasi incidunt repudiandae excepturi esse sapiente facere eos minima quibusdam dolore omnis in temporibus fugiat. Tempora quis, velit esse dicta debitis totam, minus eligendi quibusdam omnis reiciendis aperiam assumenda numquam? Sed voluptate minus sequi eligendi tempore, cum iure rem est possimus veritatis aspernatur, obcaecati sunt odit dicta illo hic. Aperiam fugit eveniet reprehenderit tenetur assumenda repellendus velit facere id sint nam at libero, consequatur autem cumque quos commodi est ut deleniti rem nesciunt tempora ipsum totam. Voluptatem, saepe tempore tempora natus earum mollitia perferendis libero sit eius quae aliquam pariatur ipsum provident quam autem illo velit ad rerum debitis quibusdam voluptas vitae. Sunt labore quas voluptas quos, nemo minima, perferendis repudiandae maxime, praesentium id dolores quod vitae! Natus sapiente fuga vitae officia obcaecati aliquam eum quae omnis sequi ducimus. Dicta laborum mollitia aperiam ducimus optio in veritatis saepe quas nesciunt qui perspiciatis ipsa harum tenetur aliquid, ratione sapiente debitis natus magni perferendis corporis ea? Mollitia quidem id incidunt expedita assumenda nesciunt illum quos nemo libero adipisci. Aperiam architecto harum nisi molestiae, fugit, consequuntur fugiat quas repellat maxime enim nesciunt mollitia autem dolore reprehenderit vitae magnam! Ipsam, cum sit nam quam iste veniam placeat ullam, facere animi earum doloribus voluptate, dolores maiores magnam sequi voluptates ipsa ea aperiam esse quisquam! Esse minima, provident ullam pariatur vero quae, magnam, cupiditate soluta autem beatae eum eius voluptas mollitia officiis asperiores placeat recusandae ut nobis id! Obcaecati sint consectetur voluptatem magni molestiae autem provident cumque nobis perferendis nihil? Sit deserunt placeat nobis cum commodi quo quas, esse iure in? Reprehenderit voluptatem iusto perferendis veniam, autem nostrum minus. Ab nisi pariatur saepe dignissimos iusto autem libero, alias minus! Corporis alias nemo modi?
+
+    </p>
+    <textarea id="post-content" name="" id="" cols="100" rows="10"></textarea>
+    <br><br>
+    <button id="bt-post">Post</button>
+    <script>
+        document.getElementById('bt-post').addEventListener('click',function(){
+            const content=document.getElementById('post-content');
+            let postContent=content.value;
+            const addPost=document.createElement('p');
+            addPost.innerText=postContent;
+            document.getElementById('my-body').appendChild(addPost);
+            content.value='';
+            
+        })
+    </script>
+</body>
+</html>
